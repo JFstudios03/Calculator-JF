@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <div id="input-display">0</div>
+            <div id="result">0</div>
+        </div>
+        <div class="input">
+        </div>
+        <div class="buttons">
+            <button onclick="clearOutput()" class="symbols-1" id="c">C</button>
+            <button onclick="appendToOutput('*')" class="symbols-1" id="x">x</button>
+            <button onclick="appendToOutput('/')" class="symbols-1" id="/">/</button>
+            <button onclick="appendToOutput('+')" class="symbols-1" id="+">+</button>
+            <button onclick="appendToOutput('7')" class="numbers" id="7">7</button>
+            <button onclick="appendToOutput('8')" class="numbers" id="8">8</button>
+            <button onclick="appendToOutput('9')" class="numbers" id="9">9</button>
+            <button onclick="appendToOutput('-')" class="symbols-1" id="-">-</button>
+            <button onclick="appendToOutput('4')" class="numbers" id="4">4</button>
+            <button onclick="appendToOutput('5')" class="numbers" id="5">5</button>
+            <button onclick="appendToOutput('6')" class="numbers" id="6">6</button>
+            <button onclick="appendToOutput('.')" class="symbols-1" id=".">.</button>
+            <button onclick="appendToOutput('1')" class="numbers" id="1">1</button>
+            <button onclick="appendToOutput('2')" class="numbers" id="2">2</button>
+            <button onclick="appendToOutput('3')" class="numbers" id="3">3</button>
+            <button onclick="calculate()" class="symbols-2 span-item2">=</button>
+            <button onclick="appendToOutput('0')" class="numbers span-item" id="0">0</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

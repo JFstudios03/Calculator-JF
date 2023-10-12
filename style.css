@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgba(104, 104, 104, 0.5), rgba(70, 70, 70, 0.5)), url(Images/Calculator.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    background-color: rgba(25, 60, 98, 1);
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.output {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.span-item{
+    grid-column: 1 / 4;
+}
+
+.span-item2{
+    grid-column: 4;
+    grid-row: 4 / 6;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.numbers{
+    background-color: white;
+    border-radius: 10px;
+}
+.symbols-1{
+    background-color: rgb(2, 23, 46);
+    color: white;
+    border-radius: 10px;
+}
+.symbols-2{
+    background-color: rgb(226, 172, 84);
+    color: white;
+    border-radius: 10px;
+}
